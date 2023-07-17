@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+     <!-- font awesome cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <!-- custom css file link  -->
+     <link rel="stylesheet" href="css/cart.css">
+   <!-- -------------- FAVICON --------------- -->
+   <link rel="icon" type="image/x-icon" href="image/favicon.png">
+</head>
+<body id="body">
+
+
+<header class="header">
+  <img class="logo" src="/image/logo.png" alt="">
+  <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="review.html">Review</a>
+      <a href="profile.html">Profile</a>
+
+  </nav>
+  <div class="icons">
+      <a href="#"id="menu-btn" class="fas fa-bars">
+      <!-- <a href="#"id="search-btn" class="fas fa-search"></a> -->
+      <a href="cart.html"id="cart-btn" class="fas fa-shopping-cart"></a>
+      <a href="login.html" id="login-btn" class="fas fa-user"></a></a>
+  </div>
+  <form action="" class="search-form">
+      <input type="search" placeholder="search here..." id="search-box">
+      <label for="search-box" class="fas fa-search"></label>
+  </form>
+</header>
+
+
+<section class="columns">
+  <div></div>
+  <div>
+    <h1>selected item(s)</h1>
+  </div>
+  <div>
+    <h1>Unit price</h1>
+  </div>
+  <div>
+    <h1>quantity</h1>
+  </div>
+  <div>
+    <h1>goods amount</h1>
+  </div>
+</section>
+<!-- products -->
+<section class="product1">
+  <div>
+    <input type="checkbox">
+  </div>
+    <div class="describe"><a href="payment.html">
+      <img src="/image/rice.png" alt="">
+      <h4>Rice</h4></a>
+    </div>
+    <div class="price">
+      <h4>KES 130.00</h4>
+    </div>
+    <div class="number">
+      <input type="number" value="1"/>
+    </div>
+    <div class="total">
+      <h4>KES 260.00</h4>
+    </div>
+    <div class="delete">
+      <a href="#"><i class="fa fa-trash"></i></a>
+    </div>
+</section>
+<section class="product1">
+  <div>
+    <input type="checkbox">
+  </div>
+  <div class="describe"><a href="payment.html">
+    <img src="/image/pawpaw.png" alt="">
+    <h4>pawpaw</h4></a>
+  </div>
+  <div class="price">
+    <h4>KES 75.00</h4>
+  </div>
+  <div class="number">
+    <input type="number" value="1"/>
+  </div>
+  <div class="total">
+    <h4>KES 300.00</h4>
+  </div>
+  <div class="delete">
+    <a href="#"><i class="fa fa-trash"></i></a>
+  </div>
+</section>
+<section class="product1">
+  <div>
+    <input type="checkbox">
+  </div>
+  <div class="describe"><a href="payment.html">
+    <img src="/image/beetroot-removebg-preview.png" alt="">
+    <h4>beetroot</h4></a>
+  </div>
+  <div class="price">
+    <h4>KES 70.00</h4>
+  </div>
+  <div class="number">
+    <input type="number" value="1"/>
+  </div>
+  <div class="total">
+    <h4>KES 70.00</h4>
+  </div>
+  <div class="delete">
+    <a href="#"><i class="fa fa-trash"></i></a>
+  </div>
+</section>
+<section class="all">
+  <div class="first">
+    <input type="checkbox">
+    <h3>select all</h3>
+  </div>
+  <div class="first">
+    <a href="#"><i class="fa fa-trash"></i></a>
+    <h3>remove all</h3>
+  </div>
+</section>
+<section class="out">
+  <div class="amount">
+    <h1>total:</h1>
+    <output>KES 630</output>
+  </div>
+  <button class="checkout"><a href="payment.html">checkout</a></button>
+</section>
+<section class="credit">copyright &copy; by Rose Kivuva | all rights reserved!</section>
+</body>
+</html>

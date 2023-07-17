@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+#log{
+  color:#f83e05;
+}
+#log2{
+  
+}
+
+  .nav-barr {
+    position: fixed;
+    width: 100%;
+    height: 70%;
+    margin-top: -150px;
+  }
+ 
+  .nav {
+    height: 80px;
+    width: 100%;
+    background: #F3EDD4;
+    position: relative;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  .nav>.nav-header {
+    display: inline;
+  }
+  .nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 22px;
+    margin-left: 50px;
+    padding: 10px 10px;
+  }
+  .nav>.nav-btn {
+    display: none;
+  }
+  .nav>.nav-links {
+    margin-right: 4em;
+    display: inline;
+    /* float: right; */
+    margin-left: 800px;
+    font-size: 20px;
+  }
+  .nav>.nav-links>a {
+    display: inline-block;
+    padding: 13px 10px;
+    text-decoration: none;
+    color:black;
+    font-weight:600 ;
+  }
+  .nav>.nav-links>a:hover {
+    color: #f83e05;
+  }
+
+
+
+
+
+
+  .search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #524e4e;
+    border-radius: 4px;
+    width: 60%;
+  }
+  
+  .search-button {
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  #cart, #user{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  #cart a,
+#user a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+#heading{
+  margin-left: 650px;
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+
+
+.new-products{
+    
+}
+  .new-products{
+ 
+  margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 50px;
+  }
+  #card1{
+    background-color: #b1f3a8;
+    padding-bottom: 2.3em;
+  }
+  #card2{
+    background-color: #b1f3a8;
+    padding-bottom: 2.3em;
+  }
+  
+  #card2 img{
+    width: 60%;
+  }
+  
+  #card3{
+    background-color:  #b1f3a8;
+    padding-bottom: 2.3em;
+  }
+  
+  #card3 img{
+    width: 60%;
+  }
+  
+
+  .new-products-card{
+    margin: 1em;
+  }
+  .new-products-card h3{
+    float: right;
+    padding: 1em;
+    background-color: #f83e05;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .new-products-card-img{
+    text-align: center;
+    padding-left: 3em;
+  }
+  .new-products-card img{
+    width: 50%;
+    padding-top: 4em;
+  }
+  
+  
+  .new-products-card h2{
+     color: #000000;
+     padding-left: 1em;
+     font-size: 1.4em;
+     font-weight: bold;
+  }
+  
+  .new-products-card h2:hover{
+    color: #71bd1a;
+  }
+  #new{
+    color: #000;
+    font-size: 65px;
+  
+  }
+  #new:hover{
+    color: red;
+  }
+  #extra-detail{
+    margin-left: 20px;
+  }
+  .new-products-card .h2-span{
+    float: right;
+    margin-top: -1.5em;
+    margin-right: 1.3em;
+    font-weight: bold;
+    color: #020202;
+    font-size: 1.1em;
+  }
+  
+  .new-products-card p{
+    color: #000000;
+    padding-left: 1.6em;
+    font-size: .9em;
+    padding-top: .8em;
+    padding-bottom: .8em;
+  }
+  
+  .stars{
+    padding-left: 1.3em;
+    padding-top: .2em;
+  }
+  .stars i{
+    color: #f10c05;
+    font-size: 1.3em;
+  }
+  #extra-detail{
+    margin-left: 40;
+  }
+  
+  .new-products-card .stars-span{
+    float: right;
+  }
+  
+  .new-products-card .stars-span i{
+    float: right;
+    margin-top: -1.5em;
+    margin-right: .8em;
+    color: #f31505;
+    border: 2px solid #4caf50;
+    padding: .2em;
+    border-radius: 100%;
+    font-size: 1.7em;
+  }
+  
+  .new-products-card .stars-span i:hover{
+    border: 2px solid #222;
+  }
+  
+  .new-button{
+    text-align: center;
+  }
+  
+  .new-button button{
+    background-color:green;
+    border-radius: 20px;
+    padding: 20px 40px;
+    border: none;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 3em;
+   
+  }
+  .new-button button:hover{
+    background-color: transparent;
+    color: #395640;
+    border: 2px solid #395640;
+  
+  }
+  
+  

@@ -1,0 +1,170 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="profile.css">
+  <script>
+    function toggleEditField(fieldId) {
+      var fieldValue = document.getElementById(fieldId);
+      var editField = document.getElementById(fieldId + "-edit");
+      var editButton = document.getElementById(fieldId + "-button");
+      var saveButton = document.getElementById(fieldId + "-save-button");
+
+      fieldValue.style.display = "none";
+      editField.style.display = "inline-block";
+      editField.value = fieldValue.innerText;
+      editButton.style.display = "none";
+      saveButton.style.display = "inline-block";
+    }
+
+    function saveField(fieldId) {
+      var fieldValue = document.getElementById(fieldId);
+      var editField = document.getElementById(fieldId + "-edit");
+      var editButton = document.getElementById(fieldId + "-button");
+      var saveButton = document.getElementById(fieldId + "-save-button");
+
+      fieldValue.style.display = "inline-block";
+      fieldValue.innerText = editField.value;
+      editField.style.display = "none";
+      editButton.style.display = "inline-block";
+      saveButton.style.display = "none";
+    }
+
+    function changeProfilePicture(event) {
+      var input = event.target;
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          var profilePic = document.getElementById('current-profile-pic');
+          profilePic.setAttribute('src', e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+  </script>
+</head>
+<body>
+
+
+  <div id="video-container">
+    <video id="video" autoplay loop muted>
+      <source src="image/farm.mp4" type="video/mp4">
+    </video>
+  </div>
+
+
+
+    <section>
+        <div class="nav-barr">
+          <div class="nav">
+              <div class="nav-header">
+                <div class="nav-title">
+                  <h1 id="log">Growy <span id="log2">Manure</span></h1>
+                </div>
+              </div>
+              <div class="nav-btn">
+                <label for="nav-check">
+            
+                </label>
+              </div>
+              <div class="nav-links">
+                  <a href="index.html">Home</a>
+                  <a href="shop.html">Shop Now</a>
+                  <a href="about.html">About Us</a>
+                  <a href="review.html">Feedbacks</a>
+                  <a href="profile.html">Profile</a>
+  
+              </div>
+            </div>
+          </div>
+      </section><br><br><br><br><br><br>
+  <div class="profile-page">
+    <div class="profile-header">
+      <div class="profile-picture">
+        <img src="image/rose1.jpg" alt="Profile Picture" id="current-profile-pic">
+        <input type="file" id="profile-pic-input" accept="image/*" onchange="changeProfilePicture(event)">
+        <label for="profile-pic-input">Change Profile Picture</label>
+      </div>
+      <h1>Rose Kivuva</h1>
+      <p>Joined on July 1, 2023</p>
+    </div>
+    <div class="profile-content">
+      <h2>About</h2>
+      <p>I am a harworking farmer that is located in Kiambu.Agriculture is my thing!!.</p>
+
+      <h2>Profile Information</h2>
+      <div class="profile-info">
+        <label>Full Name:</label>
+        <span id="full-name">Rose Kivuva</span>
+        <input type="text" id="full-name-edit" class="edit-field">
+        <span id="full-name-button" class="edit-button" onclick="toggleEditField('full-name')">Edit</span>
+        <span id="full-name-save-button" class="save-button" onclick="saveField('full-name')">Save</span>
+      </div>
+      <div class="profile-info">
+        <label>Email:</label>
+        <span id="email">rosek@gmail.com</span>
+        <input type="email" id="email-edit" class="edit-field">
+        <span id="email-button" class="edit-button" onclick="toggleEditField('email')">Edit</span>
+        <span id="email-save-button" class="save-button" onclick="saveField('email')">Save</span>
+      </div>
+      <div class="profile-info">
+        <label>Location:</label>
+        <span id="location">Kiambu, Kenya</span>
+        <input type="text" id="location-edit" class="edit-field">
+        <span id="location-button" class="edit-button" onclick="toggleEditField('location')">Edit</span>
+        <span id="location-save-button" class="save-button" onclick="saveField('location')">Save</span>
+      </div>
+      <div class="profile-info">
+        <label>Phone:</label>
+        <span id="phone">+254710654400</span>
+        <input type="text" id="phone-edit" class="edit-field">
+        <span id="phone-button" class="edit-button" onclick="toggleEditField('phone')">Edit</span>
+        <span id="phone-save-button" class="save-button" onclick="saveField('phone')">Save</span>
+      </div>
+
+      <h2>Order History</h2>
+      <ul class="order-list">
+        <li>Order #1234 - 2 NPK Fertiliser</li>
+        <li>Order #5678 - 12 Root tulsi Fertiliser</li>
+        <li>Order #9012 - 5 Vuersi Fertiliser</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>
+          We are a company that ensures that every farmer has the right fertilisers to increase productivity 
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><i class="fas fa-phone"></i> +254 456 7890</li>
+          <li><i class="fas fa-envelope"></i> growymanure@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> Juja, Kiambu</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 by Rose Kivuva | All Rights Reserved</p>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>
